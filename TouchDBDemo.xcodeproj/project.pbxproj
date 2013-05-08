@@ -1,0 +1,350 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		64377FA4173A857500E49AD4 /* MAPersonEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64377FA3173A857500E49AD4 /* MAPersonEditorViewController.m */; };
+		645C5C42173A70590094B165 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 645C5C41173A70590094B165 /* UIKit.framework */; };
+		645C5C44173A70590094B165 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 645C5C43173A70590094B165 /* Foundation.framework */; };
+		645C5C46173A70590094B165 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 645C5C45173A70590094B165 /* CoreGraphics.framework */; };
+		645C5C4C173A70590094B165 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 645C5C4A173A70590094B165 /* InfoPlist.strings */; };
+		645C5C4E173A70590094B165 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 645C5C4D173A70590094B165 /* main.m */; };
+		645C5C52173A70590094B165 /* MAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 645C5C51173A70590094B165 /* MAAppDelegate.m */; };
+		645C5C54173A70590094B165 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 645C5C53173A70590094B165 /* Default.png */; };
+		645C5C56173A70590094B165 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 645C5C55173A70590094B165 /* Default@2x.png */; };
+		645C5C58173A70590094B165 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 645C5C57173A70590094B165 /* Default-568h@2x.png */; };
+		645C5C6F173A71620094B165 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 645C5C6E173A71620094B165 /* CFNetwork.framework */; };
+		645C5C71173A71680094B165 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 645C5C70173A71680094B165 /* Security.framework */; };
+		645C5C73173A716E0094B165 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 645C5C72173A716E0094B165 /* SystemConfiguration.framework */; };
+		645C5C75173A71740094B165 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 645C5C74173A71740094B165 /* libsqlite3.dylib */; };
+		645C5C77173A717A0094B165 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 645C5C76173A717A0094B165 /* libz.dylib */; };
+		64EBB882173A74510099B95C /* CouchCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64EBB881173A74510099B95C /* CouchCocoa.framework */; };
+		64EBB885173A74610099B95C /* TouchDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64EBB883173A74610099B95C /* TouchDB.framework */; };
+		64EBB886173A74610099B95C /* TouchDBListener.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64EBB884173A74610099B95C /* TouchDBListener.framework */; };
+		64EBB888173A770B0099B95C /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64EBB887173A770B0099B95C /* Storyboard.storyboard */; };
+		64EBB88B173A773E0099B95C /* MAPeopleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64EBB88A173A773E0099B95C /* MAPeopleViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		64377FA2173A857500E49AD4 /* MAPersonEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAPersonEditorViewController.h; sourceTree = "<group>"; };
+		64377FA3173A857500E49AD4 /* MAPersonEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAPersonEditorViewController.m; sourceTree = "<group>"; };
+		645C5C3E173A70590094B165 /* TouchDBDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchDBDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		645C5C41173A70590094B165 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		645C5C43173A70590094B165 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		645C5C45173A70590094B165 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		645C5C49173A70590094B165 /* TouchDBDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TouchDBDemo-Info.plist"; sourceTree = "<group>"; };
+		645C5C4B173A70590094B165 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		645C5C4D173A70590094B165 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		645C5C4F173A70590094B165 /* TouchDBDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TouchDBDemo-Prefix.pch"; sourceTree = "<group>"; };
+		645C5C50173A70590094B165 /* MAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAAppDelegate.h; sourceTree = "<group>"; };
+		645C5C51173A70590094B165 /* MAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAAppDelegate.m; sourceTree = "<group>"; };
+		645C5C53173A70590094B165 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		645C5C55173A70590094B165 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		645C5C57173A70590094B165 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		645C5C6E173A71620094B165 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		645C5C70173A71680094B165 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		645C5C72173A716E0094B165 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		645C5C74173A71740094B165 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		645C5C76173A717A0094B165 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		64EBB881173A74510099B95C /* CouchCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CouchCocoa.framework; sourceTree = "<group>"; };
+		64EBB883173A74610099B95C /* TouchDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TouchDB.framework; sourceTree = "<group>"; };
+		64EBB884173A74610099B95C /* TouchDBListener.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TouchDBListener.framework; sourceTree = "<group>"; };
+		64EBB887173A770B0099B95C /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		64EBB889173A773E0099B95C /* MAPeopleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAPeopleViewController.h; sourceTree = "<group>"; };
+		64EBB88A173A773E0099B95C /* MAPeopleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAPeopleViewController.m; sourceTree = "<group>"; };
+		75803731D7D64E0EB446E233 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		645C5C3B173A70590094B165 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				645C5C77173A717A0094B165 /* libz.dylib in Frameworks */,
+				645C5C75173A71740094B165 /* libsqlite3.dylib in Frameworks */,
+				645C5C73173A716E0094B165 /* SystemConfiguration.framework in Frameworks */,
+				645C5C71173A71680094B165 /* Security.framework in Frameworks */,
+				645C5C6F173A71620094B165 /* CFNetwork.framework in Frameworks */,
+				645C5C42173A70590094B165 /* UIKit.framework in Frameworks */,
+				645C5C44173A70590094B165 /* Foundation.framework in Frameworks */,
+				645C5C46173A70590094B165 /* CoreGraphics.framework in Frameworks */,
+				64EBB882173A74510099B95C /* CouchCocoa.framework in Frameworks */,
+				64EBB885173A74610099B95C /* TouchDB.framework in Frameworks */,
+				64EBB886173A74610099B95C /* TouchDBListener.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		645C5C35173A70590094B165 = {
+			isa = PBXGroup;
+			children = (
+				645C5C47173A70590094B165 /* TouchDBDemo */,
+				645C5C48173A70590094B165 /* Supporting Files */,
+				645C5C40173A70590094B165 /* Frameworks */,
+				645C5C3F173A70590094B165 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		645C5C3F173A70590094B165 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				645C5C3E173A70590094B165 /* TouchDBDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		645C5C40173A70590094B165 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				645C5C76173A717A0094B165 /* libz.dylib */,
+				645C5C74173A71740094B165 /* libsqlite3.dylib */,
+				645C5C72173A716E0094B165 /* SystemConfiguration.framework */,
+				645C5C70173A71680094B165 /* Security.framework */,
+				645C5C6E173A71620094B165 /* CFNetwork.framework */,
+				64EBB883173A74610099B95C /* TouchDB.framework */,
+				64EBB884173A74610099B95C /* TouchDBListener.framework */,
+				64EBB881173A74510099B95C /* CouchCocoa.framework */,
+				645C5C41173A70590094B165 /* UIKit.framework */,
+				645C5C43173A70590094B165 /* Foundation.framework */,
+				645C5C45173A70590094B165 /* CoreGraphics.framework */,
+				75803731D7D64E0EB446E233 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		645C5C47173A70590094B165 /* TouchDBDemo */ = {
+			isa = PBXGroup;
+			children = (
+				645C5C50173A70590094B165 /* MAAppDelegate.h */,
+				645C5C51173A70590094B165 /* MAAppDelegate.m */,
+				64EBB889173A773E0099B95C /* MAPeopleViewController.h */,
+				64EBB88A173A773E0099B95C /* MAPeopleViewController.m */,
+				64377FA2173A857500E49AD4 /* MAPersonEditorViewController.h */,
+				64377FA3173A857500E49AD4 /* MAPersonEditorViewController.m */,
+				64EBB887173A770B0099B95C /* Storyboard.storyboard */,
+			);
+			path = TouchDBDemo;
+			sourceTree = "<group>";
+		};
+		645C5C48173A70590094B165 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				645C5C49173A70590094B165 /* TouchDBDemo-Info.plist */,
+				645C5C4A173A70590094B165 /* InfoPlist.strings */,
+				645C5C4D173A70590094B165 /* main.m */,
+				645C5C4F173A70590094B165 /* TouchDBDemo-Prefix.pch */,
+				645C5C53173A70590094B165 /* Default.png */,
+				645C5C55173A70590094B165 /* Default@2x.png */,
+				645C5C57173A70590094B165 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			path = TouchDBDemo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		645C5C3D173A70590094B165 /* TouchDBDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 645C5C5B173A70590094B165 /* Build configuration list for PBXNativeTarget "TouchDBDemo" */;
+			buildPhases = (
+				645C5C3A173A70590094B165 /* Sources */,
+				645C5C3B173A70590094B165 /* Frameworks */,
+				645C5C3C173A70590094B165 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TouchDBDemo;
+			productName = TouchDBDemo;
+			productReference = 645C5C3E173A70590094B165 /* TouchDBDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		645C5C36173A70590094B165 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MA;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Manuel Alabor";
+			};
+			buildConfigurationList = 645C5C39173A70590094B165 /* Build configuration list for PBXProject "TouchDBDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 645C5C35173A70590094B165;
+			productRefGroup = 645C5C3F173A70590094B165 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				645C5C3D173A70590094B165 /* TouchDBDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		645C5C3C173A70590094B165 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				645C5C4C173A70590094B165 /* InfoPlist.strings in Resources */,
+				645C5C54173A70590094B165 /* Default.png in Resources */,
+				645C5C56173A70590094B165 /* Default@2x.png in Resources */,
+				645C5C58173A70590094B165 /* Default-568h@2x.png in Resources */,
+				64EBB888173A770B0099B95C /* Storyboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		645C5C3A173A70590094B165 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				645C5C4E173A70590094B165 /* main.m in Sources */,
+				645C5C52173A70590094B165 /* MAAppDelegate.m in Sources */,
+				64EBB88B173A773E0099B95C /* MAPeopleViewController.m in Sources */,
+				64377FA4173A857500E49AD4 /* MAPersonEditorViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		645C5C4A173A70590094B165 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				645C5C4B173A70590094B165 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		645C5C59173A70590094B165 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		645C5C5A173A70590094B165 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		645C5C5C173A70590094B165 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TouchDBDemo/TouchDBDemo-Prefix.pch";
+				INFOPLIST_FILE = "TouchDBDemo/TouchDBDemo-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		645C5C5D173A70590094B165 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TouchDBDemo/TouchDBDemo-Prefix.pch";
+				INFOPLIST_FILE = "TouchDBDemo/TouchDBDemo-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		645C5C39173A70590094B165 /* Build configuration list for PBXProject "TouchDBDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				645C5C59173A70590094B165 /* Debug */,
+				645C5C5A173A70590094B165 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		645C5C5B173A70590094B165 /* Build configuration list for PBXNativeTarget "TouchDBDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				645C5C5C173A70590094B165 /* Debug */,
+				645C5C5D173A70590094B165 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 645C5C36173A70590094B165 /* Project object */;
+}
