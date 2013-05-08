@@ -8,6 +8,7 @@
 
 #import "MAPeopleViewController.h"
 #import <CouchCocoa/CouchCocoa.h>
+#import <SVProgressHUD.h>
 #import "MAPersonEditorViewController.h"
 
 @interface MAPeopleViewController ()<MAPersonEditorDelegate> {
@@ -52,7 +53,7 @@
 		[alert show];
     }
 	
-	NSArray *replications = [_db replicateWithURL:[NSURL URLWithString:@"http://alabor.me:5984/persons"]
+	NSArray *replications = [_db replicateWithURL:[NSURL URLWithString:@"http://alabor.me:5984/people"]
 									  exclusively:YES];
 	_pull = [replications objectAtIndex:0];
 	_push = [replications objectAtIndex:1];
@@ -142,6 +143,11 @@
 -(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
 	CouchDocument *document = [_tableData objectAtIndex:indexPath.row];
 	RESTOperation *op = [document DELETE];
+	
+	[op onCompletion:^{
+		[SVProgressHUD showSuccessWithStatus:NSLocalizedString(@"Deleted", nil)];
+	}];
+	[SVProgressHUD showWithStatus:NSLocalizedString(@"Deleting...", nil)];
 	[op start];
 }
 
@@ -159,6 +165,10 @@
 		op = [document putProperties:person];
 	}
 
+	[op onCompletion:^{
+		[SVProgressHUD showSuccessWithStatus:NSLocalizedString(@"Saved", nil)];
+	}];
+	[SVProgressHUD showWithStatus:NSLocalizedString(@"Saving...", nil)];
 	[op start];
 }
 

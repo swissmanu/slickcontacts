@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50477160F9C04D3B987268D9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DB99C4D1EF433D8D6B921E /* libPods.a */; };
 		64377FA4173A857500E49AD4 /* MAPersonEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64377FA3173A857500E49AD4 /* MAPersonEditorViewController.m */; };
+		64377FA6173A8EF900E49AD4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64377FA5173A8EF900E49AD4 /* QuartzCore.framework */; };
 		645C5C42173A70590094B165 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 645C5C41173A70590094B165 /* UIKit.framework */; };
 		645C5C44173A70590094B165 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 645C5C43173A70590094B165 /* Foundation.framework */; };
 		645C5C46173A70590094B165 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 645C5C45173A70590094B165 /* CoreGraphics.framework */; };
@@ -32,6 +34,7 @@
 /* Begin PBXFileReference section */
 		64377FA2173A857500E49AD4 /* MAPersonEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAPersonEditorViewController.h; sourceTree = "<group>"; };
 		64377FA3173A857500E49AD4 /* MAPersonEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAPersonEditorViewController.m; sourceTree = "<group>"; };
+		64377FA5173A8EF900E49AD4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		645C5C3E173A70590094B165 /* TouchDBDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchDBDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		645C5C41173A70590094B165 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		645C5C43173A70590094B165 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -57,6 +60,8 @@
 		64EBB889173A773E0099B95C /* MAPeopleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAPeopleViewController.h; sourceTree = "<group>"; };
 		64EBB88A173A773E0099B95C /* MAPeopleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAPeopleViewController.m; sourceTree = "<group>"; };
 		75803731D7D64E0EB446E233 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3DB99C4D1EF433D8D6B921E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEF23EB2DC2D4928A0AB0235 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64377FA6173A8EF900E49AD4 /* QuartzCore.framework in Frameworks */,
 				645C5C77173A717A0094B165 /* libz.dylib in Frameworks */,
 				645C5C75173A71740094B165 /* libsqlite3.dylib in Frameworks */,
 				645C5C73173A716E0094B165 /* SystemConfiguration.framework in Frameworks */,
@@ -75,6 +81,7 @@
 				64EBB882173A74510099B95C /* CouchCocoa.framework in Frameworks */,
 				64EBB885173A74610099B95C /* TouchDB.framework in Frameworks */,
 				64EBB886173A74610099B95C /* TouchDBListener.framework in Frameworks */,
+				50477160F9C04D3B987268D9 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +95,7 @@
 				645C5C48173A70590094B165 /* Supporting Files */,
 				645C5C40173A70590094B165 /* Frameworks */,
 				645C5C3F173A70590094B165 /* Products */,
+				FEF23EB2DC2D4928A0AB0235 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +110,7 @@
 		645C5C40173A70590094B165 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				64377FA5173A8EF900E49AD4 /* QuartzCore.framework */,
 				645C5C76173A717A0094B165 /* libz.dylib */,
 				645C5C74173A71740094B165 /* libsqlite3.dylib */,
 				645C5C72173A716E0094B165 /* SystemConfiguration.framework */,
@@ -114,6 +123,7 @@
 				645C5C43173A70590094B165 /* Foundation.framework */,
 				645C5C45173A70590094B165 /* CoreGraphics.framework */,
 				75803731D7D64E0EB446E233 /* libPods.a */,
+				E3DB99C4D1EF433D8D6B921E /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -154,9 +164,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 645C5C5B173A70590094B165 /* Build configuration list for PBXNativeTarget "TouchDBDemo" */;
 			buildPhases = (
+				60294FF9D555441CB1D256BD /* Check Pods Manifest.lock */,
 				645C5C3A173A70590094B165 /* Sources */,
 				645C5C3B173A70590094B165 /* Frameworks */,
 				645C5C3C173A70590094B165 /* Resources */,
+				6003E7F8456F4CF58EAA118D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -208,6 +220,37 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6003E7F8456F4CF58EAA118D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+		60294FF9D555441CB1D256BD /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		645C5C3A173A70590094B165 /* Sources */ = {
@@ -293,6 +336,7 @@
 		};
 		645C5C5C173A70590094B165 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEF23EB2DC2D4928A0AB0235 /* Pods.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -309,6 +353,7 @@
 		};
 		645C5C5D173A70590094B165 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEF23EB2DC2D4928A0AB0235 /* Pods.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
