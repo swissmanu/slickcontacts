@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "645C5C3D173A70590094B165"
-               BuildableName = "TouchDBDemo.app"
-               BlueprintName = "TouchDBDemo"
-               ReferencedContainer = "container:TouchDBDemo.xcodeproj">
+               BuildableName = "SlickContacts.app"
+               BlueprintName = "SlickContacts"
+               ReferencedContainer = "container:SlickContacts.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "645C5C3D173A70590094B165"
-            BuildableName = "TouchDBDemo.app"
-            BlueprintName = "TouchDBDemo"
-            ReferencedContainer = "container:TouchDBDemo.xcodeproj">
+            BuildableName = "SlickContacts.app"
+            BlueprintName = "SlickContacts"
+            ReferencedContainer = "container:SlickContacts.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -52,9 +52,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "645C5C3D173A70590094B165"
-            BuildableName = "TouchDBDemo.app"
-            BlueprintName = "TouchDBDemo"
-            ReferencedContainer = "container:TouchDBDemo.xcodeproj">
+            BuildableName = "SlickContacts.app"
+            BlueprintName = "SlickContacts"
+            ReferencedContainer = "container:SlickContacts.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -70,9 +70,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "645C5C3D173A70590094B165"
-            BuildableName = "TouchDBDemo.app"
-            BlueprintName = "TouchDBDemo"
-            ReferencedContainer = "container:TouchDBDemo.xcodeproj">
+            BuildableName = "SlickContacts.app"
+            BlueprintName = "SlickContacts"
+            ReferencedContainer = "container:SlickContacts.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

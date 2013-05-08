@@ -7,18 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MAPerson.h"
 
 @class MAPersonEditorViewController;
 
 @protocol MAPersonEditorDelegate
--(void)personEditor:(MAPersonEditorViewController*)personEditor dismissedWithPerson:(NSDictionary*)person;
+-(void)personEditor:(MAPersonEditorViewController*)personEditor dismissedWithPerson:(MAPerson*)person;
 @end
 
 @interface MAPersonEditorViewController : UITableViewController
 @property (strong) id<MAPersonEditorDelegate> delegate;
 @property (strong, nonatomic) IBOutlet UITextField *txtName;
+@property (strong, nonatomic) IBOutlet UIImageView *imgPhoto;
 
-@property (strong) NSDictionary *data;
+@property (strong) MAPerson *person;
 
 - (IBAction)onCancel:(id)sender;
 - (IBAction)onSave:(id)sender;

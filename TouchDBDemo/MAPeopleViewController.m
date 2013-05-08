@@ -9,6 +9,7 @@
 #import "MAPeopleViewController.h"
 #import <CouchCocoa/CouchCocoa.h>
 #import <SVProgressHUD.h>
+#import "MAPerson.h"
 #import "MAPersonEditorViewController.h"
 
 @interface MAPeopleViewController ()<MAPersonEditorDelegate> {
@@ -96,7 +97,8 @@
 	NSMutableArray *people = [NSMutableArray arrayWithCapacity:10];
 	for(CouchQueryRow *row in _liveQuery.rows) {
 		if(!row.document.isDeleted) {
-			[people addObject:row.document];
+			MAPerson *person = [MAPerson modelForDocument:row.document];
+			[people addObject:person];
 		}
 	}
 	
@@ -121,19 +123,38 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    
-	CouchDocument *document = [_tableData objectAtIndex:indexPath.row];
-	NSString *name = [document propertyForKey:@"name"];
-	cell.textLabel.text = name;
+	
+	return [self configureCell:cell atIndexPath:indexPath];
+}
+
+-(UITableViewCell*)configureCell:(UITableViewCell*)cell atIndexPath:(NSIndexPath*)indexPath {
+	UILabel *lblTitle = (UILabel*)[cell viewWithTag:1];
+	UIImageView *imgPhoto = (UIImageView*)[cell viewWithTag:2];
+	
+	MAPerson *person = [_tableData objectAtIndex:indexPath.row];
+	NSData *imageData = person.photo;
+	
+	lblTitle.text = person.name;
+	
+	if(imageData) {
+		UIImage *photo = [UIImage imageWithData:imageData];
+		if(photo) {
+			imgPhoto.image = photo;
+		} else {
+			imgPhoto.image = [UIImage imageNamed:@"mrunknown.jpg"];
+		}
+	} else {
+		imgPhoto.image = [UIImage imageNamed:@"mrunknown.jpg"];
+	}
     
     return cell;
 }
 
--(NSDictionary*)selectedPerson {
+-(MAPerson*)selectedPerson {
 	NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-	CouchDocument *document = [_tableData objectAtIndex:indexPath.row];
+	MAPerson *person = [_tableData objectAtIndex:indexPath.row];
 	
-	return document.properties;
+	return person;
 }
 
 -(BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -141,8 +162,8 @@
 }
 
 -(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-	CouchDocument *document = [_tableData objectAtIndex:indexPath.row];
-	RESTOperation *op = [document DELETE];
+	MAPerson *person = [_tableData objectAtIndex:indexPath.row];
+	RESTOperation *op = [person deleteDocument];
 	
 	[op onCompletion:^{
 		[SVProgressHUD showSuccessWithStatus:NSLocalizedString(@"Deleted", nil)];
@@ -154,17 +175,9 @@
 
 #pragma mark - PersonEditor Delegate
 
--(void)personEditor:(MAPersonEditorViewController *)personEditor dismissedWithPerson:(NSDictionary *)person {
-	RESTOperation *op;
+-(void)personEditor:(MAPersonEditorViewController *)personEditor dismissedWithPerson:(MAPerson*)person {
+	RESTOperation *op = [person save];
 	
-	if([[person allKeys] containsObject:@"_id"]) {
-		CouchDocument *document = [_db documentWithID:[person objectForKey:@"_id"]];
-		op = [document putProperties:person];
-	} else {
-		CouchDocument *document = [_db untitledDocument];
-		op = [document putProperties:person];
-	}
-
 	[op onCompletion:^{
 		[SVProgressHUD showSuccessWithStatus:NSLocalizedString(@"Saved", nil)];
 	}];
@@ -181,12 +194,12 @@
 	if([segueIdentifier isEqualToString:@"Add"]) {
 		UINavigationController *navigationController = (UINavigationController*)segue.destinationViewController;
 		MAPersonEditorViewController *editor = (MAPersonEditorViewController*)[navigationController.viewControllers objectAtIndex:0];
-		
+		editor.person = [[MAPerson alloc] initWithNewDocumentInDatabase:_db];
 		editor.delegate = self;
 	} else if([segueIdentifier isEqualToString:@"Edit"]) {
 		MAPersonEditorViewController *editor = (MAPersonEditorViewController*)segue.destinationViewController;
-		NSDictionary *data = [self selectedPerson];
-		editor.data = data;
+		MAPerson *person = [self selectedPerson];
+		editor.person = person;
 		editor.delegate = self;
 	}
 }

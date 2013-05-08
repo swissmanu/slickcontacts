@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		50477160F9C04D3B987268D9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DB99C4D1EF433D8D6B921E /* libPods.a */; };
+		64340B76173AA988009B8F56 /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 64340B71173AA988009B8F56 /* UIImage+Alpha.m */; };
+		64340B77173AA988009B8F56 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 64340B73173AA988009B8F56 /* UIImage+Resize.m */; };
+		64340B78173AA988009B8F56 /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 64340B75173AA988009B8F56 /* UIImage+RoundedCorner.m */; };
+		64340B7C173AAC1A009B8F56 /* MAPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 64340B7B173AAC1A009B8F56 /* MAPerson.m */; };
 		64377FA4173A857500E49AD4 /* MAPersonEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64377FA3173A857500E49AD4 /* MAPersonEditorViewController.m */; };
 		64377FA6173A8EF900E49AD4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64377FA5173A8EF900E49AD4 /* QuartzCore.framework */; };
 		645C5C42173A70590094B165 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 645C5C41173A70590094B165 /* UIKit.framework */; };
@@ -24,6 +28,7 @@
 		645C5C73173A716E0094B165 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 645C5C72173A716E0094B165 /* SystemConfiguration.framework */; };
 		645C5C75173A71740094B165 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 645C5C74173A71740094B165 /* libsqlite3.dylib */; };
 		645C5C77173A717A0094B165 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 645C5C76173A717A0094B165 /* libz.dylib */; };
+		648E0B8C173AA4460069A54F /* mrunknown.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 648E0B8B173AA4460069A54F /* mrunknown.jpg */; };
 		64EBB882173A74510099B95C /* CouchCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64EBB881173A74510099B95C /* CouchCocoa.framework */; };
 		64EBB885173A74610099B95C /* TouchDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64EBB883173A74610099B95C /* TouchDB.framework */; };
 		64EBB886173A74610099B95C /* TouchDBListener.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64EBB884173A74610099B95C /* TouchDBListener.framework */; };
@@ -32,17 +37,25 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		64340B70173AA988009B8F56 /* UIImage+Alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Alpha.h"; sourceTree = "<group>"; };
+		64340B71173AA988009B8F56 /* UIImage+Alpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Alpha.m"; sourceTree = "<group>"; };
+		64340B72173AA988009B8F56 /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
+		64340B73173AA988009B8F56 /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
+		64340B74173AA988009B8F56 /* UIImage+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCorner.h"; sourceTree = "<group>"; };
+		64340B75173AA988009B8F56 /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
+		64340B7A173AAC1A009B8F56 /* MAPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAPerson.h; sourceTree = "<group>"; };
+		64340B7B173AAC1A009B8F56 /* MAPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAPerson.m; sourceTree = "<group>"; };
 		64377FA2173A857500E49AD4 /* MAPersonEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAPersonEditorViewController.h; sourceTree = "<group>"; };
 		64377FA3173A857500E49AD4 /* MAPersonEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAPersonEditorViewController.m; sourceTree = "<group>"; };
 		64377FA5173A8EF900E49AD4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		645C5C3E173A70590094B165 /* TouchDBDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchDBDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		645C5C3E173A70590094B165 /* SlickContacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlickContacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		645C5C41173A70590094B165 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		645C5C43173A70590094B165 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		645C5C45173A70590094B165 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		645C5C49173A70590094B165 /* TouchDBDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TouchDBDemo-Info.plist"; sourceTree = "<group>"; };
+		645C5C49173A70590094B165 /* SlickContacts-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SlickContacts-Info.plist"; sourceTree = "<group>"; };
 		645C5C4B173A70590094B165 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		645C5C4D173A70590094B165 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		645C5C4F173A70590094B165 /* TouchDBDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TouchDBDemo-Prefix.pch"; sourceTree = "<group>"; };
+		645C5C4F173A70590094B165 /* SlickContacts-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SlickContacts-Prefix.pch"; sourceTree = "<group>"; };
 		645C5C50173A70590094B165 /* MAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAAppDelegate.h; sourceTree = "<group>"; };
 		645C5C51173A70590094B165 /* MAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAAppDelegate.m; sourceTree = "<group>"; };
 		645C5C53173A70590094B165 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -53,13 +66,13 @@
 		645C5C72173A716E0094B165 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		645C5C74173A71740094B165 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		645C5C76173A717A0094B165 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		648E0B8B173AA4460069A54F /* mrunknown.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mrunknown.jpg; sourceTree = "<group>"; };
 		64EBB881173A74510099B95C /* CouchCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CouchCocoa.framework; sourceTree = "<group>"; };
 		64EBB883173A74610099B95C /* TouchDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TouchDB.framework; sourceTree = "<group>"; };
 		64EBB884173A74610099B95C /* TouchDBListener.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TouchDBListener.framework; sourceTree = "<group>"; };
 		64EBB887173A770B0099B95C /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		64EBB889173A773E0099B95C /* MAPeopleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAPeopleViewController.h; sourceTree = "<group>"; };
 		64EBB88A173A773E0099B95C /* MAPeopleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAPeopleViewController.m; sourceTree = "<group>"; };
-		75803731D7D64E0EB446E233 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3DB99C4D1EF433D8D6B921E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEF23EB2DC2D4928A0AB0235 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -88,6 +101,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		64340B79173AA98D009B8F56 /* UIImage Additions */ = {
+			isa = PBXGroup;
+			children = (
+				64340B70173AA988009B8F56 /* UIImage+Alpha.h */,
+				64340B71173AA988009B8F56 /* UIImage+Alpha.m */,
+				64340B72173AA988009B8F56 /* UIImage+Resize.h */,
+				64340B73173AA988009B8F56 /* UIImage+Resize.m */,
+				64340B74173AA988009B8F56 /* UIImage+RoundedCorner.h */,
+				64340B75173AA988009B8F56 /* UIImage+RoundedCorner.m */,
+			);
+			name = "UIImage Additions";
+			sourceTree = "<group>";
+		};
+		64340B7D173AB5CB009B8F56 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				64340B7A173AAC1A009B8F56 /* MAPerson.h */,
+				64340B7B173AAC1A009B8F56 /* MAPerson.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		64340B7E173AB5DD009B8F56 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				648E0B8B173AA4460069A54F /* mrunknown.jpg */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		64340B7F173AB5E4009B8F56 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				64EBB889173A773E0099B95C /* MAPeopleViewController.h */,
+				64EBB88A173A773E0099B95C /* MAPeopleViewController.m */,
+				64377FA2173A857500E49AD4 /* MAPersonEditorViewController.h */,
+				64377FA3173A857500E49AD4 /* MAPersonEditorViewController.m */,
+				64EBB887173A770B0099B95C /* Storyboard.storyboard */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
 		645C5C35173A70590094B165 = {
 			isa = PBXGroup;
 			children = (
@@ -102,7 +157,7 @@
 		645C5C3F173A70590094B165 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				645C5C3E173A70590094B165 /* TouchDBDemo.app */,
+				645C5C3E173A70590094B165 /* SlickContacts.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,7 +177,6 @@
 				645C5C41173A70590094B165 /* UIKit.framework */,
 				645C5C43173A70590094B165 /* Foundation.framework */,
 				645C5C45173A70590094B165 /* CoreGraphics.framework */,
-				75803731D7D64E0EB446E233 /* libPods.a */,
 				E3DB99C4D1EF433D8D6B921E /* libPods.a */,
 			);
 			name = Frameworks;
@@ -133,11 +187,10 @@
 			children = (
 				645C5C50173A70590094B165 /* MAAppDelegate.h */,
 				645C5C51173A70590094B165 /* MAAppDelegate.m */,
-				64EBB889173A773E0099B95C /* MAPeopleViewController.h */,
-				64EBB88A173A773E0099B95C /* MAPeopleViewController.m */,
-				64377FA2173A857500E49AD4 /* MAPersonEditorViewController.h */,
-				64377FA3173A857500E49AD4 /* MAPersonEditorViewController.m */,
-				64EBB887173A770B0099B95C /* Storyboard.storyboard */,
+				64340B79173AA98D009B8F56 /* UIImage Additions */,
+				64340B7D173AB5CB009B8F56 /* Models */,
+				64340B7F173AB5E4009B8F56 /* UI */,
+				64340B7E173AB5DD009B8F56 /* Images */,
 			);
 			path = TouchDBDemo;
 			sourceTree = "<group>";
@@ -145,10 +198,10 @@
 		645C5C48173A70590094B165 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				645C5C49173A70590094B165 /* TouchDBDemo-Info.plist */,
+				645C5C49173A70590094B165 /* SlickContacts-Info.plist */,
 				645C5C4A173A70590094B165 /* InfoPlist.strings */,
 				645C5C4D173A70590094B165 /* main.m */,
-				645C5C4F173A70590094B165 /* TouchDBDemo-Prefix.pch */,
+				645C5C4F173A70590094B165 /* SlickContacts-Prefix.pch */,
 				645C5C53173A70590094B165 /* Default.png */,
 				645C5C55173A70590094B165 /* Default@2x.png */,
 				645C5C57173A70590094B165 /* Default-568h@2x.png */,
@@ -160,9 +213,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		645C5C3D173A70590094B165 /* TouchDBDemo */ = {
+		645C5C3D173A70590094B165 /* SlickContacts */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 645C5C5B173A70590094B165 /* Build configuration list for PBXNativeTarget "TouchDBDemo" */;
+			buildConfigurationList = 645C5C5B173A70590094B165 /* Build configuration list for PBXNativeTarget "SlickContacts" */;
 			buildPhases = (
 				60294FF9D555441CB1D256BD /* Check Pods Manifest.lock */,
 				645C5C3A173A70590094B165 /* Sources */,
@@ -174,9 +227,9 @@
 			);
 			dependencies = (
 			);
-			name = TouchDBDemo;
+			name = SlickContacts;
 			productName = TouchDBDemo;
-			productReference = 645C5C3E173A70590094B165 /* TouchDBDemo.app */;
+			productReference = 645C5C3E173A70590094B165 /* SlickContacts.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -189,7 +242,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Manuel Alabor";
 			};
-			buildConfigurationList = 645C5C39173A70590094B165 /* Build configuration list for PBXProject "TouchDBDemo" */;
+			buildConfigurationList = 645C5C39173A70590094B165 /* Build configuration list for PBXProject "SlickContacts" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -201,7 +254,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				645C5C3D173A70590094B165 /* TouchDBDemo */,
+				645C5C3D173A70590094B165 /* SlickContacts */,
 			);
 		};
 /* End PBXProject section */
@@ -216,6 +269,7 @@
 				645C5C56173A70590094B165 /* Default@2x.png in Resources */,
 				645C5C58173A70590094B165 /* Default-568h@2x.png in Resources */,
 				64EBB888173A770B0099B95C /* Storyboard.storyboard in Resources */,
+				648E0B8C173AA4460069A54F /* mrunknown.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +315,10 @@
 				645C5C52173A70590094B165 /* MAAppDelegate.m in Sources */,
 				64EBB88B173A773E0099B95C /* MAPeopleViewController.m in Sources */,
 				64377FA4173A857500E49AD4 /* MAPersonEditorViewController.m in Sources */,
+				64340B76173AA988009B8F56 /* UIImage+Alpha.m in Sources */,
+				64340B77173AA988009B8F56 /* UIImage+Resize.m in Sources */,
+				64340B78173AA988009B8F56 /* UIImage+RoundedCorner.m in Sources */,
+				64340B7C173AAC1A009B8F56 /* MAPerson.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,15 +396,17 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FEF23EB2DC2D4928A0AB0235 /* Pods.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TouchDBDemo/TouchDBDemo-Prefix.pch";
-				INFOPLIST_FILE = "TouchDBDemo/TouchDBDemo-Info.plist";
+				GCC_PREFIX_HEADER = "TouchDBDemo/SlickContacts-Prefix.pch";
+				INFOPLIST_FILE = "TouchDBDemo/SlickContacts-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SlickContacts;
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -355,15 +415,17 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FEF23EB2DC2D4928A0AB0235 /* Pods.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Manuel Alabor (VX393KWY35)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TouchDBDemo/TouchDBDemo-Prefix.pch";
-				INFOPLIST_FILE = "TouchDBDemo/TouchDBDemo-Info.plist";
+				GCC_PREFIX_HEADER = "TouchDBDemo/SlickContacts-Prefix.pch";
+				INFOPLIST_FILE = "TouchDBDemo/SlickContacts-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SlickContacts;
+				PROVISIONING_PROFILE = "F89A6C75-3142-40E7-9723-950877E70862";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -371,7 +433,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		645C5C39173A70590094B165 /* Build configuration list for PBXProject "TouchDBDemo" */ = {
+		645C5C39173A70590094B165 /* Build configuration list for PBXProject "SlickContacts" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				645C5C59173A70590094B165 /* Debug */,
@@ -380,7 +442,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		645C5C5B173A70590094B165 /* Build configuration list for PBXNativeTarget "TouchDBDemo" */ = {
+		645C5C5B173A70590094B165 /* Build configuration list for PBXNativeTarget "SlickContacts" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				645C5C5C173A70590094B165 /* Debug */,

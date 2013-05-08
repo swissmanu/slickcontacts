@@ -7,26 +7,45 @@
 //
 
 #import "MAPersonEditorViewController.h"
+#import "UIImage+Resize.h"
+#import <SVProgressHUD.h>
 
-@interface MAPersonEditorViewController ()
-
+@interface MAPersonEditorViewController () <UIImagePickerControllerDelegate>
 @end
 
 @implementation MAPersonEditorViewController
 
-@synthesize data = _data;
+@synthesize person = _person;
 
 -(void)viewDidLoad {
 	if(self.navigationController.viewControllers.count > 1) {
 		// Not shown in modal view, so remove the cancel button :)
 		self.navigationItem.leftBarButtonItem = nil;
 	}
+	
+	self.txtName.text = self.person.name;
+	self.imgPhoto.image = [UIImage imageWithData:self.person.photo];
 }
 
--(void)viewWillAppear:(BOOL)animated {
-	[super viewWillAppear:animated];
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+	if(indexPath.section == 1) {
+		[self takePhoto];
+	}
+}
+
+-(void)takePhoto {
+	UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
+	imagePicker.sourceType = UIImagePickerControllerSourceTypeCamera;
+	imagePicker.delegate = self;
+	[self presentViewController:imagePicker animated:YES completion:nil];
+}
+
+-(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+	UIImage *pickedPhoto = [info objectForKey:UIImagePickerControllerOriginalImage];
+	UIImage *smallPhoto = [pickedPhoto thumbnailImage:80 transparentBorder:0 cornerRadius:0 interpolationQuality:0.7];
+	self.imgPhoto.image = smallPhoto;
 	
-	self.txtName.text = [self.data objectForKey:@"name"];
+	[picker dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (IBAction)onCancel:(id)sender {
@@ -35,10 +54,10 @@
 
 - (IBAction)onSave:(id)sender {
 	if(self.delegate) {
-		NSMutableDictionary *data = [NSMutableDictionary dictionaryWithDictionary:self.data];
-		[data setValue:self.txtName.text forKey:@"name"];
+		self.person.name = self.txtName.text;
+		[self.person setPhotoWithImage:self.imgPhoto.image];
 		
-		[self.delegate personEditor:self dismissedWithPerson:data];
+		[self.delegate personEditor:self dismissedWithPerson:self.person];
 	}
 	
 	if(self.navigationController.viewControllers.count > 1) {
@@ -48,4 +67,5 @@
 		[self dismissViewControllerAnimated:YES completion:nil];
 	}
 }
+
 @end
