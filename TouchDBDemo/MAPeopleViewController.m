@@ -53,7 +53,7 @@
 		[alert show];
     }
 	
-	NSArray *replications = [_db replicateWithURL:[NSURL URLWithString:@"http://alabor.me:5984/people"]
+	NSArray *replications = [_db replicateWithURL:[NSURL URLWithString:@"http://couch.alabor.me/people"]
 									  exclusively:YES];
 	_pull = [replications objectAtIndex:0];
 	_push = [replications objectAtIndex:1];
