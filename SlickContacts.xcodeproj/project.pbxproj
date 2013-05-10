@@ -12,6 +12,8 @@
 		64340B77173AA988009B8F56 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 64340B73173AA988009B8F56 /* UIImage+Resize.m */; };
 		64340B78173AA988009B8F56 /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 64340B75173AA988009B8F56 /* UIImage+RoundedCorner.m */; };
 		64340B7C173AAC1A009B8F56 /* MAPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 64340B7B173AAC1A009B8F56 /* MAPerson.m */; };
+		64340B82173AB705009B8F56 /* appicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 64340B80173AB705009B8F56 /* appicon.png */; };
+		64340B83173AB705009B8F56 /* appicon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 64340B81173AB705009B8F56 /* appicon@2x.png */; };
 		64377FA4173A857500E49AD4 /* MAPersonEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64377FA3173A857500E49AD4 /* MAPersonEditorViewController.m */; };
 		64377FA6173A8EF900E49AD4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64377FA5173A8EF900E49AD4 /* QuartzCore.framework */; };
 		645C5C42173A70590094B165 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 645C5C41173A70590094B165 /* UIKit.framework */; };
@@ -45,6 +47,8 @@
 		64340B75173AA988009B8F56 /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
 		64340B7A173AAC1A009B8F56 /* MAPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAPerson.h; sourceTree = "<group>"; };
 		64340B7B173AAC1A009B8F56 /* MAPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAPerson.m; sourceTree = "<group>"; };
+		64340B80173AB705009B8F56 /* appicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appicon.png; sourceTree = "<group>"; };
+		64340B81173AB705009B8F56 /* appicon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "appicon@2x.png"; sourceTree = "<group>"; };
 		64377FA2173A857500E49AD4 /* MAPersonEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAPersonEditorViewController.h; sourceTree = "<group>"; };
 		64377FA3173A857500E49AD4 /* MAPersonEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAPersonEditorViewController.m; sourceTree = "<group>"; };
 		64377FA5173A8EF900E49AD4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -126,6 +130,8 @@
 		64340B7E173AB5DD009B8F56 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				64340B80173AB705009B8F56 /* appicon.png */,
+				64340B81173AB705009B8F56 /* appicon@2x.png */,
 				648E0B8B173AA4460069A54F /* mrunknown.jpg */,
 			);
 			name = Images;
@@ -270,6 +276,8 @@
 				645C5C58173A70590094B165 /* Default-568h@2x.png in Resources */,
 				64EBB888173A770B0099B95C /* Storyboard.storyboard in Resources */,
 				648E0B8C173AA4460069A54F /* mrunknown.jpg in Resources */,
+				64340B82173AB705009B8F56 /* appicon.png in Resources */,
+				64340B83173AB705009B8F56 /* appicon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
