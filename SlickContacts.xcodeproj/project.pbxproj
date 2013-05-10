@@ -49,6 +49,7 @@
 		64340B7B173AAC1A009B8F56 /* MAPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAPerson.m; sourceTree = "<group>"; };
 		64340B80173AB705009B8F56 /* appicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appicon.png; sourceTree = "<group>"; };
 		64340B81173AB705009B8F56 /* appicon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "appicon@2x.png"; sourceTree = "<group>"; };
+		64364B14173CE0380049CDE5 /* Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
 		64377FA2173A857500E49AD4 /* MAPersonEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAPersonEditorViewController.h; sourceTree = "<group>"; };
 		64377FA3173A857500E49AD4 /* MAPersonEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAPersonEditorViewController.m; sourceTree = "<group>"; };
 		64377FA5173A8EF900E49AD4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -204,6 +205,7 @@
 		645C5C48173A70590094B165 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				64364B14173CE0380049CDE5 /* Config.h */,
 				645C5C49173A70590094B165 /* SlickContacts-Info.plist */,
 				645C5C4A173A70590094B165 /* InfoPlist.strings */,
 				645C5C4D173A70590094B165 /* main.m */,
