@@ -61,10 +61,9 @@
 	[_pull addObserver:self forKeyPath:@"completed" options:0 context:nil];
 	[_push addObserver:self forKeyPath:@"completed" options:0 context:nil];
 	
-	
+//	_pull.filter = @"contacts/byName";
 	
 	_liveQuery = [[_db getAllDocuments] asLiveQuery];
-	_liveQuery.limit = 10;
 	_liveQuery.descending = NO;
 	[_liveQuery addObserver:self forKeyPath:@"rows" options:0 context:nil];
 	
@@ -77,15 +76,9 @@
         unsigned completed = _pull.completed + _push.completed;
         unsigned total = _pull.total + _push.total;
         if (total > 0 && completed < total) {
-			//[self showProgressView];
-			//[progressView setProgress: (completed / (float)total)];
-			//[SVProgressHUD showWithStatus:@"Sync..."];
-			NSLog(@"Syncing");
+			[[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
         } else {
-			//[self hideProgressView];
-			//[SVProgressHUD dismiss];
-			NSLog(@"Done");
-			
+			[[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
 			[self reloadData];
         }
     } else if(object == _liveQuery) {
@@ -176,13 +169,15 @@
 #pragma mark - PersonEditor Delegate
 
 -(void)personEditor:(MAPersonEditorViewController *)personEditor dismissedWithPerson:(MAPerson*)person {
-	RESTOperation *op = [person save];
-	
-	[op onCompletion:^{
-		[SVProgressHUD showSuccessWithStatus:NSLocalizedString(@"Saved", nil)];
-	}];
-	[SVProgressHUD showWithStatus:NSLocalizedString(@"Saving...", nil)];
-	[op start];
+	if(person.name.length > 0) {
+		RESTOperation *op = [person save];
+		
+		[op onCompletion:^{
+			[SVProgressHUD showSuccessWithStatus:NSLocalizedString(@"Saved", nil)];
+		}];
+		[SVProgressHUD showWithStatus:NSLocalizedString(@"Saving...", nil)];
+		[op start];
+	}
 }
 
 
