@@ -61,7 +61,15 @@
 	[_pull addObserver:self forKeyPath:@"completed" options:0 context:nil];
 	[_push addObserver:self forKeyPath:@"completed" options:0 context:nil];
 	
-	_liveQuery = [[_db getAllDocuments] asLiveQuery];
+	CouchDesignDocument *designDocument = [_db designDocumentWithName:@"contacts"];
+	[designDocument defineViewNamed:@"byName" mapBlock:^(NSDictionary *doc, TDMapEmitBlock emit) {
+		id name = [doc objectForKey:@"name"];
+		if(name) {
+			emit(name, doc);
+		}
+	} version:@"1.0"];
+	
+	_liveQuery = [[designDocument queryViewNamed:@"byName"] asLiveQuery];
 	[_liveQuery addObserver:self forKeyPath:@"rows" options:0 context:nil];
 	
 	[self reloadData];
