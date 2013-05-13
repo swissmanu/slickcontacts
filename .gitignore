@@ -1,4 +1,4 @@
 .DS_Store
 Pods/
-xcuserdatad
+xcuserdata/
 TouchDBDemo/Config.h
