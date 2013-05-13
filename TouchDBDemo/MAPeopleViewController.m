@@ -11,6 +11,7 @@
 #import <SVProgressHUD.h>
 #import "MAPerson.h"
 #import "MAPersonEditorViewController.h"
+#import <TestFlight.h>
 
 @interface MAPeopleViewController ()<MAPersonEditorDelegate> {
 	CouchDatabase *_db;
@@ -82,8 +83,10 @@
         unsigned total = _pull.total + _push.total;
         if (total > 0 && completed < total) {
 			[[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
+			[TestFlight passCheckpoint:@"Started replication"];
         } else {
 			[[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+			[TestFlight passCheckpoint:@"Finished replication"];
 			[self reloadData];
         }
     } else if(object == _liveQuery) {
@@ -165,8 +168,10 @@
 	
 	[op onCompletion:^{
 		[SVProgressHUD showSuccessWithStatus:NSLocalizedString(@"Deleted", nil)];
+		[TestFlight passCheckpoint:@"Contact deleted."];
 	}];
 	[SVProgressHUD showWithStatus:NSLocalizedString(@"Deleting...", nil)];
+	[TestFlight passCheckpoint:@"Delete contact..."];
 	[op start];
 }
 
@@ -179,8 +184,10 @@
 		
 		[op onCompletion:^{
 			[SVProgressHUD showSuccessWithStatus:NSLocalizedString(@"Saved", nil)];
+			[TestFlight passCheckpoint:@"Contact saved."];
 		}];
 		[SVProgressHUD showWithStatus:NSLocalizedString(@"Saving...", nil)];
+		[TestFlight passCheckpoint:@"Saving contanct..."];
 		[op start];
 	}
 }

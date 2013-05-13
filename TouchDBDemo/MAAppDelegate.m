@@ -7,12 +7,14 @@
 //
 
 #import "MAAppDelegate.h"
-//#import <TestFlight.h>
+#import <TestFlight.h>
 
 @implementation MAAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    //[TestFlight takeOff:@"83c5e258-324a-4cd8-935b-002c354116f2"];
+	#ifdef TESTFLIGHT_TOKEN
+	[TestFlight takeOff:TESTFLIGHT_TOKEN];
+	#endif
     return YES;
 }
 
