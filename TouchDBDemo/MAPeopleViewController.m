@@ -61,10 +61,7 @@
 	[_pull addObserver:self forKeyPath:@"completed" options:0 context:nil];
 	[_push addObserver:self forKeyPath:@"completed" options:0 context:nil];
 	
-//	_pull.filter = @"contacts/byName";
-	
 	_liveQuery = [[_db getAllDocuments] asLiveQuery];
-	_liveQuery.descending = NO;
 	[_liveQuery addObserver:self forKeyPath:@"rows" options:0 context:nil];
 	
 	[self reloadData];
